@@ -244,9 +244,21 @@
 		#mainSite.buffer {
 			margin-top:0;
 		}
-		#navPrincipal{
-			position: fixed;
-		}
 		.space-in-element{
 			height: 50px;
 		}
+
+
+.navbar-default{
+	background: #651B17;
+	border-bottom: 2px solid #501512;
+	width: 100%;
+}
+header.navbar.navbar-default.navbar-fixed-top * {
+    color: #fff!important;
+}
+li.static:hover, li a .menu-item-text:hover {
+	background: #501512;
+}
+
+
