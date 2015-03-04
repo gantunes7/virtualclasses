@@ -1,0 +1,40 @@
+﻿.tabsNav {
+	list-style-type: none;
+	width: 100%;
+	height: 41px;
+	border-bottom: 1px solid #EEE;
+}
+
+.tabsNav li {
+	display: inline-block;
+}
+
+.tabsNav li a {
+	padding: 12px 10px;
+	display: block;
+	color: #666;
+}
+
+.tabsNav li a:hover {
+	text-decoration:none;
+	background:#EEE;
+}
+.tabsNav li.selectedTab a:hover {
+	background:#fff;
+}
+
+
+.tabsNav li.selectedTab {
+	border-top: 3px solid #00AFF0;
+}
+
+.tabsNav li.selectedTab a {
+	color: #000;
+	background: #FFF;
+	padding: 9px 9px 12px 9px;
+	border-left: 1px solid #EEE;
+	border-right: 1px solid #EEE;
+}
+#items {
+	padding: 20px;
+}

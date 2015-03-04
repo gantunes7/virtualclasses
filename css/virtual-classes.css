@@ -1,0 +1,247 @@
+.wrapSection {
+	max-width:1180px;
+	padding: 30px;
+	margin:0 auto;
+}
+
+.bgGrey {
+	background:#555;
+	color:#fff;
+}
+
+.bgGreen {
+	background:#0a9b46;
+	color:#fff;
+}
+
+.bgLightTeal {
+	background:#03b3b1;
+	color:#fff;
+}
+
+.bgBlue {
+	background:#158ac2;
+	color:#fff;
+}
+
+.bgPurple {
+	background:#ac4e9d;
+	color:#fff;
+}
+#contentVC {
+	font-size:14px;
+}
+
+
+#contentVC h2 {
+	font-size:24px;
+	color:#fff;
+}
+#contentVC a:active,
+#contentVC a:hover,
+#contentVC a:visited,
+#contentVC a:link {
+	color:#fff;
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#contentVC img {
+	display:inline-block;
+	max-width: 100%;
+}
+
+#contentVC .titleVC img {
+	margin-top:40px;
+	display:inline-block;
+	margin-left: -5px;
+}
+
+#contentVC .titleVC h2 {
+	margin:10px 0;
+}
+
+#contentVC .titleVC a {
+	margin:10px 10px 10px 0;
+}
+
+
+.btnApp {
+	color:#fff;
+	border:1px solid #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	font-family:open_sanssemibold;
+	display:inline-block;
+	margin:30px 0;
+}
+
+#contentVC a.btnApp:hover {
+	background:#fff;
+}
+
+#contentVC .bgGreen a.btnApp:hover {
+	color:#0a9b46;
+}
+#contentVC .bgGrey a.btnApp:hover {
+	color:#555;
+}
+#contentVC .bgLightTeal a.btnApp:hover {
+	color:#03b3b1;
+}
+#contentVC .bgBlue a.btnApp:hover {
+	color:#158ac2;
+}
+#contentVC .bgPurple a.btnApp:hover {
+	color:#ac4e9d;
+}
+.titleVC a.btnApp {
+	border:none;
+	background:#0a9b46;
+}
+.imgVC img {
+	float: right;
+}
+.imgStudent,
+.imgResponsive,
+.imgOffice {
+	text-align:center;
+}
+#contentVC .imgStudent img,
+#contentVC .imgResponsive img,
+#contentVC .imgOffice img,
+#contentVC .imgCloud img {
+	display:inline-block;
+	margin-top: 40px;
+}
+#contentVC .imgCloud img {
+	margin-bottom:-4px;
+}
+
+#contentVC .titleChave {
+	padding: 10px 30px;
+	background:url(images/virtual-classes/chave.png) no-repeat;
+	background-position:left center;
+	margin:30px 0;
+	display:inline-block;
+}
+
+.bgGreen h2 {
+	margin:30px 0;
+}
+
+#contentVC ul {
+	list-style-image:url(images/virtual-classes/pencil.png);
+	padding-left:30px;
+}
+
+#contentVC ul li {
+	margin-bottom: 10px;
+}
+
+.noPaddingbottom {
+	padding-bottom:0;
+}
+.marginLeft {
+	margin-left:30px;
+}
+
+.alignRight {
+	text-align:right;
+}
+.alignLeft {
+	text-align:left;
+}
+.alignCenter {
+	text-align: center;
+}
+
+
+.imagesLogos.section {
+	margin-top:60px;
+}
+
+#contentVC .imageLogo img {
+	margin-left:-165px;
+	position:relative;
+	display: inline-block;
+	max-width:none;
+	margin-bottom:-4px;
+}
+
+@media only screen and (max-width: 1024px) {
+	#navPrincipal {
+		display:none;
+	}
+	#s4-workspace {
+		width:100%!important;
+	}
+	#s4-workspace #s4-bodyContainer,
+	#s4-workspace #mainSite,
+	#s4-workspace .contentStrip {
+		min-width:0;
+	}
+
+}
+@media only screen and (max-width: 800px) {
+	#contentVC,
+	.alignRight,
+	.alignLeft {
+		text-align:center;
+		word-wrap: break-word;
+	}	
+	#contentVC ul {
+		text-align:left;
+	}
+	.imgVC img {
+		float:none;
+	}
+	#contentVC .imageLogo img {
+		max-width:none;
+	}
+	#contentVC .titleChave {
+		background:none;
+		padding:10px 0;
+	}
+	.titleChave br,
+	#search {
+		display:none;
+	}
+	.marginLeft.btnApp {
+		margin-left:0;
+	}
+	#contentVC .imgVC img {
+		margin-bottom:-4px;
+	}
+	#contentVC .titleVC img {
+		margin-top:20px;
+	}
+
+}
+#navSecondary,
+		#breadcrumbSite,
+		#footer {
+			display:none;
+		}
+		#contentMain {
+			margin:0;
+		}
+		#mainSite,
+		.masterCol.span_3_of_4 {
+			width:100%;
+			max-width:none;
+			padding:0;
+			display: block;
+		}
+		#navPrincipal,
+		#header,
+		#headStripe {
+			position:relative;
+		}
+		#mainSite.buffer {
+			margin-top:0;
+		}
