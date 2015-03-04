@@ -124,7 +124,7 @@
 
 #contentVC .titleChave {
 	padding: 10px 30px;
-	background:url(images/virtual-classes/chave.png) no-repeat;
+	background:url(images/chave.png) no-repeat;
 	background-position:left center;
 	margin:30px 0;
 	display:inline-block;
@@ -135,7 +135,7 @@
 }
 
 #contentVC ul {
-	list-style-image:url(images/virtual-classes/pencil.png);
+	list-style-image:url(images/pencil.png);
 	padding-left:30px;
 }
 
