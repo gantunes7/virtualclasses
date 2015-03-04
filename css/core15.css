@@ -6600,7 +6600,7 @@ display:inline-block;
 }
 .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item
 {
-margin-right:30px;
+/*margin-right:30px;*/
 border:1px solid transparent;
 }
 .ms-core-listMenu-horizontalBox li.static > span .ms-core-listMenuEdit .ms-navedit-linkCell,

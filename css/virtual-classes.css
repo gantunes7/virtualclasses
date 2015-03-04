@@ -75,7 +75,7 @@
 	border:1px solid #fff;
 	padding:10px 20px;
 	text-transform:uppercase;
-	font-family:open_sanssemibold;
+	font-family:"Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
 	display:inline-block;
 	margin:30px 0;
 }
@@ -124,7 +124,7 @@
 
 #contentVC .titleChave {
 	padding: 10px 30px;
-	background:url(images/chave.png) no-repeat;
+	background:url(/images/chave.png) no-repeat;
 	background-position:left center;
 	margin:30px 0;
 	display:inline-block;
@@ -135,7 +135,7 @@
 }
 
 #contentVC ul {
-	list-style-image:url(images/pencil.png);
+	list-style-image:url(/images/pencil.png);
 	padding-left:30px;
 }
 

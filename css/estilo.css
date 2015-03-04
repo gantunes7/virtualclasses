@@ -5,6 +5,12 @@
 @import url('/css/simpletabs.css');
 
 
+#contentVC{
+	font-family: open_sansregular, Segoe UI, Arial;
+	font-size: 13px;
+	color: #333;
+}
+
 /*FOR DEV*/
 #DeltaTopNavigation li.static > a {
 	display: none !important;
