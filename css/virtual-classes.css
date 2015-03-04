@@ -237,11 +237,16 @@
 			padding:0;
 			display: block;
 		}
-		#navPrincipal,
 		#header,
 		#headStripe {
 			position:relative;
 		}
 		#mainSite.buffer {
 			margin-top:0;
+		}
+		#navPrincipal{
+			position: fixed;
+		}
+		.space-in-element{
+			height: 50px;
 		}
