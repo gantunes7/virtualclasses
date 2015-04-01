@@ -119,7 +119,6 @@
 	margin-top: 40px;
 }
 #contentVC .imgCloud img {
-	margin-bottom:-4px;
 }
 
 #contentVC .titleChave {
@@ -170,7 +169,6 @@
 	position:relative;
 	display: inline-block;
 	max-width:none;
-	margin-bottom:-4px;
 }
 
 @media only screen and (max-width: 1024px) {
