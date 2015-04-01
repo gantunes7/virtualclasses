@@ -1,9 +1,9 @@
 var addItemDefaultLink = function (scope,element,attr,controller,ams,psvc,rp){
 	psvc.Initialize(scope)
-	scope.field = {}
+	
 	var client = ams(attr.msurl, attr.msauthkey);
 	scope._items = client.getTable(attr.tableName);
-	
+
 	if(rp.itemId){
 		var query = scope._items.where({id:rp.itemId})
 		scope._items.read(query).then(function (items){
@@ -21,14 +21,15 @@ var addItemDefaultLink = function (scope,element,attr,controller,ams,psvc,rp){
 			go_home()
 		})
 	}
-	scope.save = function(){
+	scope.save = function(field){
 		if(rp.itemId){
-			scope._items.update(scope.field).then(apply);
+			scope._items.update(field).then(apply);
 		}else{
-			scope.field.origem = window.location.href;
-			scope._items.insert(scope.field).then(apply);
+			field.origem = window.location.href;
+			scope._items.insert(field).then(apply);
 		}		
 	}
+	scope.subscribe('save_item',scope.save)
 	function apply() {
 		scope.$apply(function(){
 			itemAdded()

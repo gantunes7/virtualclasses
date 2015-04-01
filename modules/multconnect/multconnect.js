@@ -14,15 +14,16 @@
 			restrict:'E',
 			link:function(scope,element,attr){
 				pbs.Initialize(scope)
-				scope.subscribe('item_added',function(){
-					scope.addedSuccess(arguments[0])
-				})
-				scope.addedSuccess = function(_scope){
-					scope.contatoSuccess = true
-				}
+				scope.subscribe('item_added',function(){scope.addedSuccess(arguments[0])})
+
+				scope.addedSuccess = function(_scope){scope.contatoSuccess = true}
+				
 				var added = 'multconnect-show-contact-form-true'
+				
 				var removed = 'multconnect-show-contact-form-false'
+				
 				scope.field = scope.field || {}
+				
 				scope.show = function(bool){
 					if(bool){
 						element.addClass(added)
