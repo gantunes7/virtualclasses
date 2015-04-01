@@ -27,10 +27,19 @@ multconnect-contact .page-header.contact{
 }
 
 multconnect-contact .modalContactForm{
-	  position: fixed;
+  position: fixed;
   top: 23%;
   left: 42%;
 }
+
+@media only screen and (max-width: 768px) {
+	multconnect-contact .modalContactForm{
+	  top: 6%;
+	  left: 21%;
+	}
+}
+
+
 
 .modalContactForm h3.message{
 	display: none
