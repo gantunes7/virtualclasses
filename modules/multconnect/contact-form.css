@@ -17,7 +17,8 @@ multconnect-contact.multconnect-show-contact-form-true {
     z-index: 99999;
     background: #B3ADAD;}
 
-multconnect-contact#contact-component.multconnect-show-contact-form-true h2{
+multconnect-contact#contact-component.multconnect-show-contact-form-true h2,
+multconnect-contact.multconnect-show-contact-form-true h3.message{
 	display: block!important;
 }
 
@@ -29,6 +30,10 @@ multconnect-contact .modalContactForm{
 	  position: fixed;
   top: 23%;
   left: 42%;
+}
+
+.modalContactForm h3.message{
+	display: none
 }
 
 add-item a.btn:hover , .contact-form h2{

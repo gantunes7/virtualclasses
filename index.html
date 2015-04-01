@@ -223,9 +223,9 @@
         </div>
         <div class="vcSection bgGray contact-form" id="contato">
             <div class="wrapSection" data-ng-controller="sectionContactCtrl">
-                <h2 class="page-header">Interesse</h2>
-                <p class="message" data-ng-if="contatoSuccess">Contato Enviado com sucesso</p>
-                <add-item  msurl="https://multmobileservice1.azure-mobile.net/" msauthkey="pcfkIYgZscBqMDERLCjUwQkguyqKiu43"  table-name="contato" custom-template="modules/multconnect/contact-form.html"></add-item>
+                <h2 class="page-header" data-ng-if="!contatoSuccessPage">Interesse</h2>
+                <add-item data-ng-if="!contatoSuccessPage"  msurl="https://multmobileservice1.azure-mobile.net/" msauthkey="pcfkIYgZscBqMDERLCjUwQkguyqKiu43"  table-name="contato" custom-template="modules/multconnect/contact-form.html"></add-item>
+                <h3 class="message" data-ng-if="contatoSuccessPage">Contato Enviado com sucesso</h3>
             </div>
         </div>
         <div class="vcSection bgGrey">

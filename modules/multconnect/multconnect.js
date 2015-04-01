@@ -19,11 +19,6 @@
 				})
 				scope.addedSuccess = function(_scope){
 					scope.contatoSuccess = true
-					setTimeout(function(){
-						scope.$apply(function(){
-							scope.contatoSuccess = false
-						})
-					},2000)
 				}
 				var added = 'multconnect-show-contact-form-true'
 				var removed = 'multconnect-show-contact-form-false'
@@ -43,8 +38,7 @@
 			template:'<a class="btn contact-link" data-ng-if="!form.show" data-ng-click="show(true)">Contato</a>'+
 					 '<a class="btn contact-link" data-ng-if="form.show" data-ng-click="show(false)">Fechar</a>'+
 					 '<div class="modalContactForm">'+
-					 	'<h2 class="page-header ng-hide">Contato</h2>'+
-					 	'<p class="message" data-ng-if="contatoSuccess">Contato Enviado com sucesso</p>'+
+					 	'<h2 class="page-header ng-hide" data-ng-if="!contatoSuccess">Contato</h2>'+
 					 	'<add-item '+
 						 	' msurl="https://multmobileservice1.azure-mobile.net/" '+
 						 	' msauthkey="pcfkIYgZscBqMDERLCjUwQkguyqKiu43" '+
@@ -52,23 +46,18 @@
 						 	' table-name="contato" '+
 						 	' custom-template="modules/multconnect/contact-form.html">'+
 					 	'</add-item>'+
+					 	'<h3 class="message" data-ng-if="contatoSuccess">Contato Enviado com sucesso</h3>'+
 					 '</div>'
 		}
 	})
 
 
 	multconnect.controller('sectionContactCtrl',function($scope,PubSubService){
-		PubSubService.Initialize($scope)
 		$scope.subscribe('item_added',function(){
 			$scope.addedSuccess(arguments[0])
 		})
 		$scope.addedSuccess = function(_scope){
-			$scope.contatoSuccess = true
-			setTimeout(function(){
-				$scope.$apply(function(){
-					$scope.contatoSuccess = false
-				})
-			},2000)
+			$scope.contatoSuccessPage = true
 		}
 	})
 })();
