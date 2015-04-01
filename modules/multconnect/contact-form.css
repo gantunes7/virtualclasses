@@ -25,6 +25,12 @@ multconnect-contact .page-header.contact{
 	display: block
 }
 
+multconnect-contact .modalContactForm{
+	  position: fixed;
+  top: 23%;
+  left: 42%;
+}
+
 add-item a.btn:hover , .contact-form h2{
     color: #444!important;}
 

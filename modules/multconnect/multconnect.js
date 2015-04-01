@@ -42,7 +42,7 @@
 			},
 			template:'<a class="btn contact-link" data-ng-if="!form.show" data-ng-click="show(true)">Contato</a>'+
 					 '<a class="btn contact-link" data-ng-if="form.show" data-ng-click="show(false)">Fechar</a>'+
-					 '<div class="container">'+
+					 '<div class="modalContactForm">'+
 					 	'<h2 class="page-header ng-hide">Contato</h2>'+
 					 	'<p class="message" data-ng-if="contatoSuccess">Contato Enviado com sucesso</p>'+
 					 	'<add-item '+
