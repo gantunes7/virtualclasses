@@ -1,0 +1,9 @@
+<div class="col-md-12">
+	<div data-ng-if="!loading">
+		<h1>{{item.nome}} - <a href="#item/edit/{{item.id}}">edit</a></h1>
+		<h4>{{item.dataInicio | date:shortDate}}</h4>
+	</div>
+	<div data-ng-if="loading">
+		Loading...
+	</div>
+</div>

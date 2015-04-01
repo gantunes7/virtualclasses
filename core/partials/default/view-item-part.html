@@ -1,0 +1,10 @@
+<div class="col-md-12" edit-item>
+	<div data-ng-if="!loading">
+		<h2>{{item.nome}}</h2>
+		<h3>{{item.plataforma_atual}}</h3>
+		<h4>{{item.dataInicio | date:shortDate}}</h4>
+	</div>
+	<div data-ng-if="loading">
+		Loading...
+	</div>
+</div>

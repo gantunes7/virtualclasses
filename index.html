@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="/css/virtual-classes.css">
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/core15.css">
+    <link rel="stylesheet" href="/modules/multconnect/contact-form.css">
 </head>
 <body data-ng-app="app">
+
 <header class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
@@ -216,6 +218,13 @@
                 </div>
             </div>
         </div>
+        <div class="vcSection bgGray contact-form" id="contato">
+            <div class="wrapSection" data-ng-controller="sectionContactCtrl">
+                <h2 class="page-header">Interesse</h2>
+                <p class="message" data-ng-if="contatoSuccess">Contato Enviado com sucesso</p>
+                <add-item  msurl="https://multmobileservice1.azure-mobile.net/" msauthkey="pcfkIYgZscBqMDERLCjUwQkguyqKiu43"  table-name="contato" custom-template="modules/multconnect/contact-form.html"></add-item>
+            </div>
+        </div>
         <div class="vcSection bgGrey">
             <div class="wrapSection noPaddingbottom">
                 <div class="group section">
@@ -264,6 +273,7 @@
                     </div>
                 </div>
             </div>
+            <multconnect-contact id="contact-component"></multconnect-contact>
         </div>
     </div>
 </div>
@@ -271,6 +281,19 @@
     <script src="/js/lib/jquery.fancybox.js"></script>
     <script src="/js/lib/angular.js"></script>
     <script src="/js/lib/bootstrap-angular.js"></script>
+
+
+    <script src="/core/js/angular-route.js"></script>
+    <script src="/core/js/angular-resource.js"></script>
+    <script src="/core/js/mobile-services.js"></script>
+    <script src="/core/js/directives-comunication-service.js"></script>
+    <script src="/core/js/document.db.js"></script>
+    <script src="/core/js/loading-bar.js"></script>
+    <script src="/core/js/ui-bootstrap.min.js"></script>        
+    <script src="/core/module/module-base.js"></script>
+    <script src="/modules/multconnect/multconnect.js"></script>
+
+
     <script src="/js/app.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {

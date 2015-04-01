@@ -1,0 +1,37 @@
+multconnect-contact{
+	display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+	z-index: 999;
+}
+multconnect-contact .contact-link{
+	 background: #0a9b46;
+	color:#fff;
+	z-index: 99999;
+	float: right;
+}
+multconnect-contact.multconnect-show-contact-form-true {
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: #B3ADAD;}
+
+multconnect-contact#contact-component.multconnect-show-contact-form-true h2{
+	display: block!important;
+}
+
+multconnect-contact .page-header.contact{
+	display: block
+}
+
+add-item a.btn:hover , .contact-form h2{
+    color: #444!important;}
+
+.page-header.contact{
+	display: none;
+}
+
+#contato{
+	background: #B3ADAD;
+}

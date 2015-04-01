@@ -1,3 +1,6 @@
 (function (){
-	angular.module('app',['ui.bootstrap'])
+	angular.module('app',['ngRoute','ui.bootstrap','Project','multconnect'])
 })()
+
+
+

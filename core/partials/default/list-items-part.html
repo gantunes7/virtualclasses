@@ -1,0 +1,15 @@
+<div class="col-md-12">
+	<div  class="col-md-12" data-ng-repeat="item in items" data-ng-if="!loading">
+		<a  class="col-md-4"href="#item/view/{{item.id}}">{{item.nome}} - {{item.plataforma_atual}}</a>
+		<delete-item 
+			table-name="projetos"
+			class="col-md-8"
+			default-template="/core/partials/default/del-btn-list-part.html"
+			default-js="/core/js/default/delete-item-default-link.js">
+			</delete-item>
+	</div>
+	<div data-ng-if="loading"> 
+		<loading></loading>
+	</div>
+	<div data-ng-if="items.length == 0 && !loading">Sem Items</div>
+</div>

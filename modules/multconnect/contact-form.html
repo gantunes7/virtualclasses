@@ -1,0 +1,21 @@
+<form ng-submit="save()" name="multconnect-contact-form" validate data-ng-init="field = {}">
+	<div class="form-group">
+      <label>Nome *</label>
+      <input type="text" required data-ng-disabled="loading" data-ng-model="field.nome" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Email *</label>
+      <input type="Email" required data-ng-disabled="loading" data-ng-model="field.email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Mensagem *</label>
+      <textarea required data-ng-disabled="loading" data-ng-model="field.conteudoAssunto" class="form-control"></textarea>
+    </div>
+    <div class="form-group right">
+    	<button class="btn-success btn" type="submit" data-ng-if="!loading">Salvar</button>
+    	<a data-ng-if="itemId" data-ng-click="delete_item()">Delete</a>
+    	<div data-ng-if="loading">
+    		<loading></loading>
+    	</div>
+    </div>
+</form>
