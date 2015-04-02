@@ -52,6 +52,55 @@ add-item a.btn:hover , .contact-form h2{
 	display: none;
 }
 
-#contato{
-	background: #B3ADAD;
+
+#contato {
+  background: #888888;
+}
+
+.contact-form h2 {
+  color: #FFF!important;
+  margin-top: 0;
+  font-size: 42px!important;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.form-group.holdBtn {
+text-align: right;
+}	
+
+
+
+.contact-form .wrapSection {
+  max-width: 600px;
+}
+
+.contact-form label {
+  font-weight: normal;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form input[type=text], 
+.contact-form input[type=email], 
+.contact-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  background: #fff;
+}
+
+
+.contact-form .btn-success.btn,.btn-success.btn {
+  margin: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  background: none;
+  border: 1px solid #fff;
+}
+
+.contact-form .btn-success.btn:hover {
+color: #888888;
+background:#fff;
 }

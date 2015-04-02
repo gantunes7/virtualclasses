@@ -1,4 +1,4 @@
-<form ng-submit="save(field)" validate data-ng-init="field = {}" data-ng-if="!contatoSuccess">
+<form ng-submit="save(field)" validate data-ng-init="field = {}">
 	<div class="form-group">
       <label>Nome *</label>
       <input type="text" required data-ng-disabled="loading" data-ng-model="field.nome" class="form-control">
@@ -11,7 +11,7 @@
       <label>Mensagem *</label>
       <textarea required data-ng-disabled="loading" data-ng-model="field.conteudo" class="form-control"></textarea>
     </div>
-    <div class="form-group right">
+    <div class="form-group right holdBtn" data-ng-if="!loading">
     	<button class="btn-success btn" type="submit">Salvar</button>
     	<div data-ng-if="loading">
     		<loading></loading>

@@ -11,7 +11,6 @@ var addItemDefaultLink = function (scope,element,attr,controller,ams,psvc,rp){
 				scope.itemId = rp.itemId
 				scope.field = items[0]
 				scope.loading = false
-				
 			})
 		})
 	}
@@ -21,7 +20,18 @@ var addItemDefaultLink = function (scope,element,attr,controller,ams,psvc,rp){
 			go_home()
 		})
 	}
+	//to save array in azure tables
+	function concatArray(field){
+		for(var key in field){
+			if(field[key] instanceof Array){
+				field[key] = field[key].join(';')
+			}
+		}
+		return field
+	}
 	scope.save = function(field){
+		field = concatArray(field)
+		scope.publish('start_add',scope)
 		if(rp.itemId){
 			scope._items.update(field).then(apply);
 		}else{

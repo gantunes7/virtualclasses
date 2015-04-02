@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/virtual-classes.css">
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/core15.css">
-    <link rel="stylesheet" href="/modules/multconnect/contact-form.css">
+    <link rel="stylesheet" href="/modules/multconnect/form.css">
     <meta name="robots" content="index,follow">
     <meta name="author" content="Mult-connect">
     <meta name="description" content="O Virtual Classes é uma ferramenta inovadora para área de ensino que ajuda professores e alunos a comparatilhar experiências e conteúdos.">
@@ -224,9 +224,16 @@
         </div>
         <div class="vcSection bgGray contact-form" id="contato">
             <div class="wrapSection" data-ng-controller="sectionContactCtrl">
-                <h2 class="page-header" data-ng-if="!contatoSuccessPage">Interesse</h2>
-                <add-item data-ng-if="!contatoSuccessPage"  msurl="https://multmobileservice1.azure-mobile.net/" msauthkey="pcfkIYgZscBqMDERLCjUwQkguyqKiu43"  table-name="contato" custom-template="modules/multconnect/contact-form.html"></add-item>
-                <h3 class="message" data-ng-if="contatoSuccessPage">Contato Enviado com sucesso</h3>
+                <h2 class="page-header" data-ng-if="!contatoSuccessPage">Registro de Interesse</h2>
+                <add-item 
+                    data-ng-if="!contatoSuccessPage" 
+                    msurl="https://multmobileservice1.azure-mobile.net/" 
+                    msauthkey="pcfkIYgZscBqMDERLCjUwQkguyqKiu43"  
+                    table-name="instituicao" 
+                    custom-template="modules/multconnect/interesse-form.html">
+                </add-item>
+                <h3 data-ng-if="loading">Enviando...</h3>
+                <h3 class="message" data-ng-if="interesseSuccessPage">Contato Enviado com sucesso</h3>
             </div>
         </div>
         <div class="vcSection bgGrey">
