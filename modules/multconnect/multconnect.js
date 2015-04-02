@@ -54,8 +54,8 @@ var timeoutNumber = 3000;
 						 	' table-name="contato" '+
 						 	' custom-template="modules/multconnect/contact-form.html">'+
 					 	'</add-item>'+
-					 	'<h3 class="message" data-ng-if="contatoSuccess">Contato Enviado com sucesso, Obrigado!</h3>'+
-					 	'<h3 class="message" data-ng-if="loading">Enviando...</h3>'+
+					 	'<label class="message contato" data-ng-if="contatoSuccess">Contato Enviado com sucesso, Obrigado!</label>'+
+					 	'<label class="message" data-ng-if="loading">Enviando...</label>'+
 					 '</div>'
 		}
 	})

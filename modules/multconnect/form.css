@@ -18,8 +18,12 @@ multconnect-contact.multconnect-show-contact-form-true {
     background: #B3ADAD;}
 
 multconnect-contact#contact-component.multconnect-show-contact-form-true h2,
-multconnect-contact.multconnect-show-contact-form-true h3.message{
+multconnect-contact.multconnect-show-contact-form-true label.message{
 	display: block!important;
+}
+
+.modalContactForm label.message{
+	display: none
 }
 
 multconnect-contact .page-header.contact{
@@ -37,12 +41,6 @@ multconnect-contact .modalContactForm{
 	  top: 6%;
 	  left: 21%;
 	}
-}
-
-
-
-.modalContactForm h3.message{
-	display: none
 }
 
 add-item a.btn:hover , .contact-form h2{
@@ -82,7 +80,9 @@ text-align: right;
 }
 
 .contact-form input[type=text], 
-.contact-form input[type=email], 
+.contact-form input[type=email]
+.contact-form input[type=tel], 
+.contact-form select, 
 .contact-form textarea {
   border-radius: 0;
   box-shadow: none;
