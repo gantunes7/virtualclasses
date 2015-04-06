@@ -48,8 +48,8 @@ var timeoutNumber = 3000;
 					 '<div class="modalContactForm">'+
 					 	'<h2 class="page-header ng-hide" data-ng-if="!contatoSuccess">Contato</h2>'+
 					 	'<add-item '+
-						 	' msurl="https://multmobileservice1.azure-mobile.net/" '+
-						 	' msauthkey="pcfkIYgZscBqMDERLCjUwQkguyqKiu43" '+
+						 	' msurl="https://msvirtualclass.azure-mobile.net/"  '+
+						 	' msauthkey="RgTgHskYYRZkLsHDwiqHmBxemmCmlv65"  '+
 						 	' data-ng-if="form.show" '+
 						 	' table-name="contato" '+
 						 	' custom-template="modules/multconnect/contact-form.html">'+
@@ -59,7 +59,6 @@ var timeoutNumber = 3000;
 					 '</div>'
 		}
 	})
-
 
 	multconnect.controller('sectionContactCtrl',function($scope,PubSubService){
 		PubSubService.Initialize($scope)
